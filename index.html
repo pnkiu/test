@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Chỗ học web của tfat</title>
   </head>
   <body>
@@ -113,24 +114,31 @@
       <li>Menu item 4</li>
     </ul>
     <hr />
+
     <p><b>Thực hành bài 4: Thẻ a.</b></p>
     <a href="#">Trở về đầu trang</a>
     <a href="https://www.facebook.com/wuu.neh/" target="_blank">My facebook</a>
     <a href="tel: 0906761405">Call me</a>
     <a href="mailto: phat56302@gmail.com">Mail to me</a>
+    <hr />
+
     <p><b>Thực hành bài 5: Thẻ img</b></p>
     <h1>Xerath</h1>
     <hr />
     <img src="img/xerath.jpg" alt="Xerath" />
     <p>- Lorem ipsum dolor sit.</p>
     <hr />
+
     <p><b>Thực hành bài 5: Các kí tự đặc biệt.</b></p>
     <p>chúng ta sử dụng thẻ &lt;h1&gt; &lt;/h1&gt; để đặt tiêu đề</p>
     <p>&copy; Copyright Tfat 2024</p>
     <hr />
+
     <p><b>Thực hành bài 6: Thẻ pre. </b></p>
     <p>Tui là Tfat</p>
     <pre>Tui           là             Tfat</pre>
+    <hr />
+
     <p><b>Thực hành bài 7: Thẻ code. </b></p>
     <p>
       Sử dụng trang web
@@ -152,6 +160,8 @@
         dolor &lt;br /&gt; &lt;/p&gt; &lt;hr /&gt;
       </code>
     </pre>
+    <hr />
+
     <p><b>Thực hành bài 8: HTML Table.</b></p>
     <table>
       <thead>
@@ -217,7 +227,6 @@
         </tr>
       </tbody>
       <!-- tfoot>tr>td*2-->
-      s
       <tfoot>
         <tr>
           <td>Remark</td>
@@ -225,5 +234,52 @@
         </tr>
       </tfoot>
     </table>
+    <hr />
+    <p><b>Thực hành bài 9: checkbox and radio </b></p>
+    <p><b>1. What fruits do you like? </b></p>
+    <form action="">
+      <input type="checkbox" name="Apple" id="" /> Apple
+      <br />
+      <input type="checkbox" name="Mango" id="" /> Mango
+      <br />
+      <input type="checkbox" name="Banana" id="" /> Banana
+      <br />
+      <input type="submit" value="Send" />
+    </form>
+    <p><b>2. Your gender?</b></p>
+    <form action="">
+      <input type="radio" name="gender" id="" />Male
+      <br />
+      <input type="radio" name="gender" id="" />Female
+      <br />
+      <input type="submit" value="Send" />
+    </form>
+    <p><b>Thực hành bài 10: button in form </b></p>
+    <form action="">
+      <input type="submit" value="Send" />
+      <br />
+      <br />
+      <input type="button" value="Send btn" />
+      <br />
+      <br />
+      <button class="ic-btn">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAABWVBMVEVyHVFHcEx0Fvp8Fv1yFP1/FfyLCOyfBOmtAeS7AuDHAd3UANjZAs7rD6xyFvzjANTqAMHoA7l2F/yPFfx8GPmfD/zFF/XVWujoZuLyZt3pRt/yGdHyA8j1AKTViPj/9Pr////8g9f9A7r3DZz5vO794Pf+ruj9B6uzFPv7JLv+AJr+BI/+YMP/1vD+AIThG+n9GZn/vd3/YZz+AXP+GoT/r8r+AmT/b5z+HHH+I3f+G2P/ur7+FFD+Klb+fYv/wcr+LUf+LWX+AFn+Nzr+Ohz+RT7+inP+Si7/ztD+TxL/zbv+Wy//9fH+WgL+c1X+ZyX+PUv+Bzv+VXD+cxr/6eL+aQT+eAX+nDj+gwD+gxH+fSL+rYn+jwD+iwL+XhX/3rn/1bH9ZR/+lwP+nwH+xHH8ZC3+qAH+sAD+wAP+x1P+zGb+pl79mQn+uAD9J3T+ygD9O1n8pRL9twuaEkMNAAAAc3RSTlMBAF3G///////////GW9j//9nY/1r///////////7//////8b/////////////////////////////////////////////////////////////////////////////////xf///1v////////Y/9j/2VzGSus+GgAAAeNJREFUeAFFjEWiU0EQRc/tqu74V9wZ4TBiB6wG3wpzVoQ7zHCXeELypHH+KVchJAESaEs0IUv0Zv+7fwLgSAOk9ZFghcnfDw4AAg18cyhWCKNVob9NCZjQLWVrEGhJbJGDoCBpMwCrJTETAKBWgdeRGb4dmJW56PdI/KU1K4X15N+AFsW0+3/WVm7Pa0Pmu4Fh7HcbRIjMIhr3FItUGAH4SNZKjK32YjKpK3Iv0yUY0b8g0Vs0oK+8wbeyMBAQwVeo44R1z7XWq6rqpn5jiTmAeQO3iceg9zkYzKvc71iEmMFbqCJJ4tDcKFrLjX5D/MEdq8GpIUUgd/tgGboTgiUDPDZ44SXNpr0gWRcAgqEmEPJRNVPOxYaOth0oAHdCxWoOzslH+RCvlafYMgFUHvAIHoCjz16io80BrH/j0AAcJ9KWKkhn5sRyGjsDtr/sqyrsWNO1cW9/cDNLZgHLSzVvn+wMq9qbKKwy7TiIaKTW56pzW6Oa+N1OKEQdvvl2RyOE4DEOZurd1cHNeab27tyjOPfhFlucXP04ovF97B6jTOzdJwFLaNAff7N6c8incH1VpiSR67q2VgjzUU7JgbMTiQtFKmgAsCAuczlflmVZn7iGBFc1awB/p4tqUS3LDb8OPwBrSrZIO/KHZwAAAABJRU5ErkJggg=="
+          alt=""
+        /><b>Send</b>
+      </button>
+    </form>
+    <hr />
+    <p><b>Thực hành bài 11: action</b></p>
+    <h2>1. Google search</h2>
+    <form action="https://www.google.com/search">
+      <input type="text" name="q" id="" />
+      <input type="submit" value="search" />
+    </form>
+    <h2>2. Youtube search</h2>
+    <form action="https://www.youtube.com/results">
+      <input type="text" name="search_query" id="" />
+      <input type="submit" value="search" />
+    </form>
   </body>
 </html>
